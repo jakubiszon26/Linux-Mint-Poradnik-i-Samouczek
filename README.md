@@ -1,5 +1,21 @@
 # Linux Mint - Samouczek
 
+- [Linux Mint - Samouczek](#linux-mint---samouczek)
+    + [1. wstęp](#1-wstęp)
+    + [2. Wybór wersji.](#2-wybór-wersji)
+    + [3. Wymagania Minimalne](#3-wymagania-minimalne)
+    + [4. Pobieranie obrazu i instalacja](#4-pobieranie-obrazu-i-instalacja)
+      - [Pobieranie obrazu](#pobieranie-obrazu)
+      - [Tworzenie pendrive'a z instalatorem](#tworzenie-pendrive-z-instalatorem)
+      - [Uruchamianie](#uruchamianie)
+      - [Instalacja](#instalacja)
+          + [1. Wybór języka](#1-wybór-języka)
+          + [2. Wybór układu klawiatury](#2-wybór-układu-klawiatury)
+          + [3. Zezwolenie na kodeki multimediów](#3-zezwolenie-na-kodeki-multimediów)
+          + [4. Rodzaj instalacji](#4-rodzaj-instalacji)
+          + [5. Lokalizacja użytkownika (Region)](#5-lokalizacja-użytkownika)
+          + [6. Konfiguracja konta użytkownika](#6-konfiguracja-konta-użytkownika)
+
 ### 1. wstęp
 
 Linux Mint to przyjazny użytkownikowi system operacyjny.  W tym samouczku w sposób dokładny przejdziemy przez jego instalację, konfigurację i zbadamy każdy jego zakamarek.
@@ -32,7 +48,7 @@ Jeżeli twoje urządzenie spełnia te warunki, możesz zainstalować Minta! Tera
 
     Aby pobrać obraz systemu Linux Mint udajemy się na stronę [All Versions - Linux Mint](https://linuxmint.com/download_all.php) i wybieramy najnowszą dostępną wersję ze środowiskiem Cinnamon. Jeżeli masz bardzo nowy sprzęt i domyślny obraz nie działa na twoim komputerze - wybierz wersję z dopiskiem "Edge" ***uwaga, wersja edge może być mniej stabilna od innych obrazów***
 
-#### Tworzenie pendrive'a z instalatorem
+#### Tworzenie pendrive z instalatorem
 
     Super, mamy już obraz naszego systemu. Teraz musimy utworzyć pendrive rozruchowy, potrzebny do uruchomienia Minta na naszym komputerze. Pobieramy program Etcher ze strony [balena.io](https://www.balena.io/etcher/) i pobieramy wersję zgodną z naszym aktualnym systemem operacyjnym. W przypadku systemu Windows najwygodniej wybrać wersję portable nie wymagającą instalacji. Uruchamiamy program i powinniśmy zobaczyć 3 kroki do wykonania. 
 
@@ -78,13 +94,13 @@ Instalator ubiquity w systemie Linux Mint składa się z 6 następujących krok�
 
 Instalator może również poprosić cię o hasło do sieci wi-fi. 
 
-###### 1. Wybór języka:
+###### 1. Wybór języka
 
 Krok bardzo prosty, wybieramy z listy język który będzie towarzyszyć nam przy instalacji oraz na nowo zainstalowanym systemie. 
 
 ![jezyk_instalatora.png](img/jezyk_instalatora.png)
 
-###### 2. Wybór układu klawiatury:
+###### 2. Wybór układu klawiatury
 
 Czas na wybór układu klawiatury! Z racji, że w poprzednim kroku zaznaczyliśmy język polski, instalator "domyślił" się i wybrał nam odpowiednią opcję - Polski. Warto zauważyć, że Linux Mint nie ma układu "Polski programisty" a zwyczajnie Polski.
 
@@ -106,7 +122,7 @@ Instalator poprosi jeszcze o potwierdzenie, **tego kroku nie da się cofnąć - 
 
 ![potwierdzenie_instalator.png](img/potwierdzenie_instalator.png)
 
-###### 5. Lokalizacja użytkownika (Region)
+###### 5. Lokalizacja użytkownika
 
 Teraz możemy wykazać się naszą znajomością geografii i zaznaczyć na mapie Warszawę. Można również wybrać pożądany region z rozwijanej listy pod mapą.
 
