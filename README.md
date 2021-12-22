@@ -26,7 +26,6 @@
       + [6. Konfiguracja konta użytkownika](#6-konfiguracja-konta-użytkownika)
   
   + [Konfiguracja](#konfiguracja)
-    
     - [Interfejs użytkownika](#interfejs-użytkownika)
       + [Kolory pulpitu](#kolory-pulpitu)
       + [Układ panelu](#układ-panelu)
