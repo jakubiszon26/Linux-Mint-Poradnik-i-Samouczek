@@ -1,22 +1,42 @@
 # Linux Mint - Samouczek
 
 - [Linux Mint - Samouczek](#linux-mint---samouczek)
-    + [1. wstęp](#1-wstęp)
-    + [2. Wybór wersji.](#2-wybór-wersji)
-    + [3. Wymagania Minimalne](#3-wymagania-minimalne)
-    + [4. Pobieranie obrazu i instalacja](#4-pobieranie-obrazu-i-instalacja)
-      - [Pobieranie obrazu](#pobieranie-obrazu)
-      - [Tworzenie pendrive'a z instalatorem](#tworzenie-pendrive-z-instalatorem)
-      - [Uruchamianie](#uruchamianie)
-      - [Instalacja](#instalacja)
-          + [1. Wybór języka](#1-wybór-języka)
-          + [2. Wybór układu klawiatury](#2-wybór-układu-klawiatury)
-          + [3. Zezwolenie na kodeki multimediów](#3-zezwolenie-na-kodeki-multimediów)
-          + [4. Rodzaj instalacji](#4-rodzaj-instalacji)
-          + [5. Lokalizacja użytkownika (Region)](#5-lokalizacja-użytkownika)
-          + [6. Konfiguracja konta użytkownika](#6-konfiguracja-konta-użytkownika)
-
-### 1. wstęp
+  
+  + [1. wstęp](#1-wstęp)
+  
+  + [2. Wybór wersji.](#2-wybór-wersji)
+  
+  + [3. Wymagania Minimalne](#3-wymagania-minimalne)
+  
+  + [4. Pobieranie obrazu i instalacja](#4-pobieranie-obrazu-i-instalacja)
+    
+    - [Pobieranie obrazu](#pobieranie-obrazu)
+    
+    - [Tworzenie pendrive'a z instalatorem](#tworzenie-pendrive-z-instalatorem)
+    
+    - [Uruchamianie](#uruchamianie)
+    
+    - [Instalacja](#instalacja)
+      
+      + [1. Wybór języka](#1-wybór-języka)
+      + [2. Wybór układu klawiatury](#2-wybór-układu-klawiatury)
+      + [3. Zezwolenie na kodeki multimediów](#3-zezwolenie-na-kodeki-multimediów)
+      + [4. Rodzaj instalacji](#4-rodzaj-instalacji)
+      + [5. Lokalizacja użytkownika (Region)](#5-lokalizacja-użytkownika)
+      + [6. Konfiguracja konta użytkownika](#6-konfiguracja-konta-użytkownika)
+  
+  + [Konfiguracja](#konfiguracja)
+    
+    - [Interfejs użytkownika](#interfejs-użytkownika)
+      + [Kolory pulpitu](#kolory-pulpitu)
+      + [Układ panelu](#układ-panelu)
+    - [System migawek](#system-migawek)
+    - [Menedżer sterowników](#menedżer-sterowników)
+    - [Menedżer aktualizacji](#menedżer-aktualizacji)
+      + [Zmiana serwerów lustrzanych](#zmiana-serwerów-lustrzanych)
+      + [Przeprowadzanie aktualizacji](#przeprowadzanie-aktualizacji)
+  
+   
 
 Linux Mint to przyjazny użytkownikowi system operacyjny.  W tym samouczku w sposób dokładny przejdziemy przez jego instalację, konfigurację i zbadamy każdy jego zakamarek.
 
@@ -139,3 +159,130 @@ To już wszystko! Proces instalacji może potrwać nawet kilkanaście minut. Ter
 ![instalacja.png](img/instalacja.png)
 
 Po zakończonej instalacji uruchamiamy komputer ponownie i wyciągamy pendrive'a.
+
+To już wszystko! Teraz czeka nas podstawowa [konfiguracja](#3-Konfiguracja)
+
+### Konfiguracja
+
+Po ponownym uruchomieniu komputera ujrzymy ekran powitalny. Będzie on się pojawiał przy każdym następnym uruchomieniu, chyba że odznaczymy pole zaznaczone na zdjęciu poniżej numerem 1. Następnie klikamy kartę "Pierwsze kroki" aby przejść do najważniejszych ustawień. 
+
+**Jeżeli interfejs jest za mały, możesz najpierw przejść do [kroku 6]()**
+
+![ekran_powitalny1.png](img/ekran_powitalny1.png)
+
+Powinniśmy zobaczyć 8 różnych proponowanych opcji konfiguracji.
+
+1. Kolory pulpitu
+
+2. Układ panelu
+
+3. System migawek
+
+4. Menedżer sterowników
+
+5. Menedżer aktualizacji
+
+6. Ustawienia systemowe
+
+7. Menedżer oprogramowania
+
+8. Zapora sieciowa
+
+Przejdźmy razem przez każdą z nich.
+
+##### Interfejs użytkownika
+
+W pierwszych krokach na interfejs użytkownika składają się 2 pierwsze opcje.
+
+###### Kolory pulpitu
+
+Tutaj możesz wybrać kolor akcentowy. Domyślnie jest nim kolor zielony, dlatego wiele elementów np. ramki oknien i ikony są zielone. Pod kolorami znajduje się również przełącznik motywu systemowego - jasny -> ciemny
+
+###### Układ panelu
+
+W tym miescu możesz wybrać styl dla twojego panelu. Domyślnie włączony jest tryb nowoczesny. Tradycyjny jest mniejszy i bardziej przypomina ten znany z windows'a 7
+
+![ekran_powitalny_interfejs_uzytkownika.png](img/ekran_powitalny_interfejs_uzytkownika.png)
+
+##### System migawek
+
+System migawek to pewnego rodzaju zabezpieczenie. Tworzy on kopie systemu, dzięki której gdy coś się zepsuje możemy przywrócić wcześniejszą migawkę. Domyślnie nie działa to na nasze pliki katalogu domowego a jedynie na pliki systemowe, dlatego należy pamiętać aby w dalszym ciągu tworzyć kopie zapasową innymi przeznaczonymi do tego narzędziami.
+
+![ekran_powitalny_system_migawek.png](/home/jakub/Programowanie/Linux-Mint-Poradnik-i-Samouczek/img/ekran_powitalny_system_migawek.png)
+
+Klikamy "Uruchom".
+
+Pokaże nam się konfiguracja timeshift'a. W pierwszym kroku wybieramy RSYNC
+
+<img title="" src="img/timeshoft_rsync.png" alt="timeshoft_rsync.png" width="403">
+
+I przechodzimy dalej. Timeshift obliczy teraz rozmiar systemu, a następnie pozwoli nam wybrać dysk na którym chcemy trzymać automatycznie tworzone migawki. Najlepiej wybrać głowny dysk i partycję na której zainstalowany jest system.
+
+![timeshift_dysk.png](img/timeshift_dysk.png)
+
+Klikamy dalej i ustawiamy preferowaną liczbe migawek. Najlepiej ustawić przynajmniej 2 codzienne i 2 rozruchowe.
+
+<img title="" src="img/timeshift_liczba_migawek.png" alt="timeshift_liczba_migawek.png" width="530">
+
+Następny krok nie jest wymagany **(a wręcz nie zalecany)** ale jeżeli masz wystarczającą ilość miejsca na dysku, aby jednocześnie robić kopię swoich plików z katalogu domowego możesz zaznaczyć opcje "Include all files" w wierszu z nazwą twojego użytkownika.
+
+![timeshift_include_all_files.png](img/timeshift_include_all_files.png)
+
+Klikamy zakończ i voilà - system migawek skonfigurowany. Możemy od razu jedną migawkę zrobić.
+
+<img title="" src="img/timeshift_utworz.png" alt="timeshift_utworz.png" width="568">
+
+Timeshift zrobi teraz migawkę - może to chwilę potrwać. Tym razem zaproponuję ciepłą czekoladę :).
+
+##### Menedżer sterowników
+
+Jeżeli masz kartę graficzną NVIDIA to najprawdopodobniej będziesz potrzebował zamknięto źródłowych sterowników - są one najbardziej zalecane. Instalacja jest bardzo prosta. Otwieramy menedżer sterowników.
+
+![menedzer_sterownikow.png](img/menedzer_sterownikow.png)
+
+Jeżeli widzisz taki ekran - Super! Twój komputer nie potrzebuje żadnych niestandardowych sterowników.
+
+<img title="" src="img/menedzer_sterownikow_ok.png" alt="menedzer_sterownikow_ok.png" width="541">
+
+Jeżeli jednak nie widzisz takiego ekranu, twój komputer potrzebuje dodatkowych sterowników. Okienko będzie wyglądało podobnie do tego.
+
+![menedzer_sterownikow_nvidia.png](img/menedzer_sterownikow_nvidia.png)
+
+Zaznaczamy zalecane sterowniki i zatwierdzamy zmiany.
+
+##### Menedżer aktualizacji
+
+Menedżer aktualizacji przydaje się zdecydowanie najczęściej ze wszystkich opcji konfiguracji. Ważne jest aby trzymać system aktualny z najnowszymi łatkami bezpieczeństwa.
+
+Klikamy uruchom
+
+![menedzer_aktualizacji.png](img/menedzer_aktualizacji.png)
+
+Możemy uruchomić go również z poziomu panelu lub wyszukując go w menu zlokalizowanym po lewej stronie panelu.
+
+![menedzer_aktualizacji_panel.png](img/menedzer_aktualizacji_panel.png)
+
+Po zainstalowaniu systemu zazwyczaj mamy do zainstalowania aktualizację. 
+Dobra wiadomość - W systemach linux nie trzeba uruchamiać komputera ponownie podczas aktualizacji!
+
+###### Zmiana serwerów lustrzanych
+
+Możliwe, że pojawi ci się opcja zmiany na lokalny serwer lustrzany. Jeżeli się nie pojawiła możesz ręcznie włączyć aplikację "Zasoby oprogramowania"
+
+![serwery_lustrzane.png](img/serwery_lustrzane.png)
+
+Kliknij tak. Powinno wyświetlić ci się okno aplikacji "Zasoby oprogramowania". W kategorii serwery lustrzane wybierz Główny (Linux Mint) a następnie wybierz serwer, który najbardziej ci odpowiada. Powtórz to z serwerem bazowym (Ubuntu).
+
+![mirrory.png](img/mirrory.png)
+
+A następnie potwierdź konfigurację i odśwież pamięć podręczną APT.
+
+![mirrory_odswiez_apt.png](img/mirrory_odswiez_apt.png)
+
+###### Przeprowadzanie aktualizacji
+
+Przeprowadzanie aktualizacji w systemie Linux Mint jest bardzo proste, jedyne co musimy zrobić to wejść w Menedżer aktualizacji, upewnić sie że wszystkie pakiety są zaznaczone i kliknąć "Zainstaluj aktualizację". Mint zapyta również o hasło, ponieważ do aktualizacji potrzebne są uprawnienia administratora.
+
+![aktualizacje.png](img/aktualizacje.png)
+
+W trakcie aktualizacji możemy normalnie korzystać z komputera.
